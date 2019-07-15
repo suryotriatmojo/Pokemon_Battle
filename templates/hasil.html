@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Battle Result</title>
+
+    <style>
+            body{
+                background: yellow
+            }
+        </style>
+</head>
+<body>
+    <center>
+        <br><br><br>
+        <h1>Battle Result</h1>
+        <br>
+    </center>
+
+    <h1>
+        <center>
+            {{ nama_1 }}
+            VS
+            {{ nama_2 }}
+            <br>
+            <img src="{{ gambar_1 }}" alt="gambar1" width="300">
+            <img src="http://127.0.0.1:5000/plot/{{plot}}" alt="plot" width="800">
+            <img src="{{ gambar_2 }}" alt="gambar2" width="300">
+        </center>
+    </h1>
+
+    <h2>
+        <center>
+            {{ proba }}% {{ winner }} Wins!
+        </center>
+    </h2>
+
+    <center>
+        <form action="http://127.0.0.1:5000">
+            <input type="submit" value="Kembali">
+        </form>
+    </center>
+</body>
+</html>
